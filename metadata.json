@@ -1,0 +1,14 @@
+{
+  "name": "fbjerggaard-unixodbc",
+  "version": "0.1.0",
+  "author": "fbjerggaard",
+  "summary": "Install and configure UnixODBC",
+  "license": "MIT",
+  "source": "http://github.com/fbjerggaard/puppet-unixodbc",
+  "project_page": "https://github.com/fbjerggaard/puppet-unixodbc",
+  "issues_url": "https://github.com/fbjerggaard/puppet-unixodbc/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
