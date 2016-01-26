@@ -74,7 +74,7 @@ define unixodbc::resource::driver (
     } else {
       fail('$fileUsage must be set')
     }
-    $config_file = '/etc/odbcinst.ini'
+    $config_file = "${unixodbc::config_path}/odbcinst.ini"
     ensure_resource('concat', $config_file, {
       owner          => 'root',
       group          => 'root',

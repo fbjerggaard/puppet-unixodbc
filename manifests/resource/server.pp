@@ -57,7 +57,7 @@ define unixodbc::resource::server (
   if !is_integer($port) {
     fail('$port must be an integer.')
   }
-  $config_file = '/etc/odbc.ini'
+  $config_file = "${unixodbc::config_path}/odbc.ini"
   ensure_resource('concat', $config_file, {
     owner          => 'root',
     group          => 'root',

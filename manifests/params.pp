@@ -3,4 +3,5 @@ class unixodbc::params {
   # Package parameters
   $package_name   = 'unixodbc'
   $package_ensure = 'present'
+  $config_path    = '/etc/'
 }
