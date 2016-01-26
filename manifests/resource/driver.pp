@@ -18,6 +18,7 @@
 # [*fileUsage*]
 #
 # Sample Usage:
+#
 #  unixodbc::resource::driver { 'PostgreSQL':
 #    ensure      => 'present',
 #    description => 'ODBC for PostgreSQL',
