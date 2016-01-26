@@ -2,7 +2,7 @@
 #
 # This defines a unixodbc driver
 #
-# Parameters:
+# === Parameters:
 # [*ensure*]
 #
 # [*description*]
@@ -17,7 +17,7 @@
 #
 # [*fileUsage*]
 #
-# Sample Usage:
+# === Sample Usage:
 #
 #  unixodbc::resource::driver { 'PostgreSQL':
 #    ensure      => 'present',

@@ -1,6 +1,6 @@
 # == Define: unixodbc::resource::server
 #
-# This definition defines a server connection
+# This defines a server connection
 #
 # === Parameters:
 # [*ensure*]
