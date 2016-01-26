@@ -1,7 +1,11 @@
 [<%= @name %>]
 Description = <%= @description %>
 Driver      = <%= @driver %>
-<% if not @driver64.nil? and @driver64 -%>Driver64    = <%= @driver64 %><% end -%>
+<% if not @driver64.nil? and @driver64 -%>
+Driver64    = <%= @driver64 %>
+<% end -%>
 Setup       = <%= @setup %>
-<% if not @setup64.nil? and @setup64 -%>Setup64    = <%= @setup64 %><% end -%>
+<% if not @setup64.nil? and @setup64 -%>
+Setup64    = <%= @setup64 %>
+<% end -%>
 FileUsage   = <%= @fileUsage %>
