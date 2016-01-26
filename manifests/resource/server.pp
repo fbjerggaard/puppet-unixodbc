@@ -58,11 +58,11 @@ define unixodbc::resource::server (
     fail('$port must be an integer.')
   }
   $config_file = '/etc/odbc.ini'
-  concat { $config_file:
+  ensure_resource('concat', $config_file, {
     owner => 'root',
     group => 'root',
     mode  => '644',
-  }
+  })
   concat::fragment { "server-${name}":
     ensure  => $ensure,
     target  => $config_file,
