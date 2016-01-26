@@ -76,9 +76,10 @@ define unixodbc::resource::driver (
     }
     $config_file = '/etc/odbcinst.ini'
     ensure_resource('concat', $config_file, {
-      owner => 'root',
-      group => 'root',
-      mode  => '644',
+      owner          => 'root',
+      group          => 'root',
+      mode           => '644',
+      ensure_newline => true,
     })
     concat::fragment { "driver-${name}":
       ensure  => $ensure,

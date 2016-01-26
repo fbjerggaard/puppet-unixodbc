@@ -59,9 +59,10 @@ define unixodbc::resource::server (
   }
   $config_file = '/etc/odbc.ini'
   ensure_resource('concat', $config_file, {
-    owner => 'root',
-    group => 'root',
-    mode  => '644',
+    owner          => 'root',
+    group          => 'root',
+    mode           => '644',
+    ensure_newline => true,
   })
   concat::fragment { "server-${name}":
     ensure  => $ensure,
