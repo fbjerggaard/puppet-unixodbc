@@ -1,0 +1,7 @@
+[<%= @name %>]
+Description = <%= @description %>
+Driver      = <%= @driver %>
+<%= defined(@driver64) ? "Driver64    = @driver64" : '' -%>
+Setup       = <%= @setup %>
+<%= defined(@setup64) ? "Setup64    = @setup64" : '' -%>
+FileUsage   = <%= @fileUsage %>
