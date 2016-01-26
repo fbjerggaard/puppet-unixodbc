@@ -1,4 +1,4 @@
-# define: unixodbc::resource::driver
+# == Define: unixodbc::resource::driver
 #
 # This defines a unixodbc driver
 #
@@ -27,6 +27,14 @@
 #    setup64     => '/usr/lib64/libodbcpsqlS.so',
 #    fileUsage   => 1,
 #  }
+#
+# === Authors
+#
+# Frederik Bjerggaard Nielsen <fbn@firstcom.dk>
+#
+# === Copyright
+#
+# Copyright 2016 Firstcom A/S
 define unixodbc::resource::driver (
   $ensure = 'present',
   $description = undef,

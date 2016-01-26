@@ -29,13 +29,18 @@
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Frederik Bjerggaard Nielsen <fbn@firstcom.dk>
 #
 # === Copyright
 #
-# Copyright 2016 Your name here, unless otherwise noted.
+# Copyright 2016 Firstcom A/S
 #
-class unixodbc {
-
+class unixodbc (
+  $package_name   = $::unixodbc::params::package_name,
+  $package_ensure = $::unixodbc::params::package_ensure,
+  ) inherits unixodbc::params {
+  class { '::unixodbc::package':
+    package_name => $package_name
+  }
 
 }

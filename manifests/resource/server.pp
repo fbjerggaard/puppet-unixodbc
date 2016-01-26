@@ -1,17 +1,28 @@
-# define: unixodbc::resource::server
+# == Define: unixodbc::resource::server
 #
 # This definition defines a server connection
 #
-# Parameters:
+# === Parameters:
 # [*ensure*]
 #
-# Actions:
+# [*host*]
 #
-# Requires:
+# [*driver*]
 #
-# Sample Usage:
+# [*database*]
+#
+# [*port*]
+#
+# === Sample Usage:
 #
 #
+# === Authors
+#
+# Frederik Bjerggaard Nielsen <fbn@firstcom.dk>
+#
+# === Copyright
+#
+# Copyright 2016 Firstcom A/S
 define unixodbc::resource::server (
   $ensure = 'present',
   $host = $name,
