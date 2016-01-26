@@ -12,10 +12,10 @@
 include unixodbc
 
 unixodbc::resource::server { '192.168.1.1':
-  ensure    => 'present',
-  driver    => 'PostgreSQL',
-  database  => 'myawesomestuff',
-  fileUsage => 5432,
+  ensure   => 'present',
+  driver   => 'PostgreSQL',
+  database => 'myawesomestuff',
+  port     => 5432,
 }
 
 unixodbc::resource::driver { 'PostgreSQL':
